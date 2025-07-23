@@ -1,0 +1,110 @@
+{
+  "intents": [
+    {
+      "name": "greeting",
+      "patterns": [
+        "hola",
+        "buenos días",
+        "buenas tardes",
+        "buenas noches",
+        "saludos",
+        "qué tal",
+        "cómo estás",
+        "hey",
+        "hi"
+      ],
+      "responses": [
+        "¡Hola! ¿En qué puedo ayudarte?",
+        "Hola, ¿cómo estás?",
+        "¡Saludos! ¿Qué puedo hacer por ti hoy?",
+        "¡Hola! Estoy aquí para ayudarte.",
+        "¡Buen día! ¿En qué puedo asistirte?"
+      ]
+    },
+    {
+      "name": "farewell",
+      "patterns": [
+        "adiós",
+        "hasta luego",
+        "nos vemos",
+        "chao",
+        "hasta pronto",
+        "bye",
+        "me voy"
+      ],
+      "responses": [
+        "¡Adiós! Que tengas un buen día.",
+        "Hasta luego. ¡Vuelve pronto!",
+        "Nos vemos. Estoy aquí si necesitas algo más.",
+        "¡Hasta pronto!",
+        "Adiós, ha sido un placer ayudarte."
+      ]
+    },
+    {
+      "name": "thanks",
+      "patterns": [
+        "gracias",
+        "te lo agradezco",
+        "muchas gracias",
+        "genial, gracias",
+        "excelente, gracias",
+        "thank you"
+      ],
+      "responses": [
+        "¡De nada!",
+        "Es un placer ayudarte.",
+        "No hay de qué.",
+        "Encantado de poder ayudar.",
+        "Para eso estoy aquí."
+      ]
+    },
+    {
+      "name": "help",
+      "patterns": [
+        "ayuda",
+        "necesito ayuda",
+        "puedes ayudarme",
+        "qué puedes hacer",
+        "cómo funciona esto",
+        "instrucciones",
+        "opciones"
+      ],
+      "responses": [
+        "Puedo ayudarte con información sobre el clima, responder preguntas generales y más. ¿En qué puedo ayudarte?",
+        "Estoy aquí para asistirte. Puedo responder preguntas, darte información sobre el clima y más.",
+        "Puedo responder a tus preguntas y proporcionarte información útil. ¿Qué necesitas saber?",
+        "Soy un chatbot asistente. Puedo ayudarte con información, responder preguntas y más."
+      ]
+    },
+    {
+      "name": "weather",
+      "patterns": [
+        "clima",
+        "tiempo",
+        "temperatura",
+        "va a llover",
+        "pronóstico",
+        "cómo está el clima",
+        "cómo estará el clima",
+        "lloverá hoy"
+      ],
+      "responses": [
+        "Para darte información sobre el clima, necesito saber tu ubicación. ¿En qué ciudad te encuentras?",
+        "Puedo verificar el clima por ti. ¿En qué ciudad estás?",
+        "Para el pronóstico del tiempo, necesito conocer tu ubicación. ¿Podrías decirme la ciudad?",
+        "Claro, puedo darte información meteorológica. ¿De qué ciudad necesitas el pronóstico?"
+      ]
+    },
+    {
+      "name": "fallback",
+      "patterns": [],
+      "responses": [
+        "Lo siento, no entendí eso. ¿Podrías reformularlo?",
+        "No estoy seguro de entender. ¿Puedes decirlo de otra manera?",
+        "Disculpa, no pude comprender tu mensaje. ¿Podrías ser más específico?",
+        "No tengo información sobre eso. ¿Hay algo más en lo que pueda ayudarte?",
+        "No estoy programado para responder a eso. ¿Puedo ayudarte con algo más?"
+      ]
+    }
+  ]
+}

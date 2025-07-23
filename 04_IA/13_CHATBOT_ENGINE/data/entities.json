@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "city",
+      "values": [
+        {
+          "value": "Madrid",
+          "synonyms": ["madrid", "madriz"]
+        },
+        {
+          "value": "Barcelona",
+          "synonyms": ["barcelona", "barna", "bcn"]
+        },
+        {
+          "value": "Valencia",
+          "synonyms": ["valencia"]
+        },
+        {
+          "value": "Sevilla",
+          "synonyms": ["sevilla", "hispalis"]
+        },
+        {
+          "value": "Bilbao",
+          "synonyms": ["bilbao"]
+        },
+        {
+          "value": "Zaragoza",
+          "synonyms": ["zaragoza"]
+        },
+        {
+          "value": "Málaga",
+          "synonyms": ["málaga", "malaga"]
+        },
+        {
+          "value": "Murcia",
+          "synonyms": ["murcia"]
+        },
+        {
+          "value": "Palma",
+          "synonyms": ["palma", "palma de mallorca"]
+        },
+        {
+          "value": "Las Palmas",
+          "synonyms": ["las palmas", "las palmas de gran canaria"]
+        }
+      ]
+    },
+    {
+      "name": "date",
+      "values": [
+        {
+          "value": "today",
+          "synonyms": ["hoy", "este día", "ahora"]
+        },
+        {
+          "value": "tomorrow",
+          "synonyms": ["mañana", "día siguiente"]
+        },
+        {
+          "value": "day_after_tomorrow",
+          "synonyms": ["pasado mañana", "en dos días"]
+        },
+        {
+          "value": "this_week",
+          "synonyms": ["esta semana", "durante la semana"]
+        },
+        {
+          "value": "this_weekend",
+          "synonyms": ["este fin de semana", "el finde", "sábado y domingo"]
+        },
+        {
+          "value": "next_week",
+          "synonyms": ["próxima semana", "semana que viene", "la siguiente semana"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+# Información del Modelo
+
+Este es un archivo de información para el modelo de clasificación de imágenes.
+
+En una implementación real, necesitarías descargar los siguientes archivos:
+
+1. Modelo pre-entrenado (por ejemplo, MobileNetV2, ResNet50, etc.)
+2. Archivo de configuración del modelo
+3. Lista de clases
+
+Para este ejercicio, asume que estos archivos están disponibles en este directorio:
+- `model.caffemodel` o `model.pb` - El modelo pre-entrenado
+- `model.prototxt` o `model.pbtxt` - La configuración del modelo
+- `classes.txt` - La lista de clases que el modelo puede reconocer
+
+## Cómo obtener modelos reales
+
+Para una implementación real, puedes descargar modelos pre-entrenados de:
+
+1. TensorFlow Model Zoo: https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md
+2. OpenCV DNN Models: https://github.com/opencv/opencv/wiki/Deep-Learning-in-OpenCV
+3. PyTorch Hub: https://pytorch.org/hub/
+
+## Conversión de modelos
+
+Si necesitas convertir modelos entre formatos, puedes usar herramientas como:
+- ONNX: https://onnx.ai/
+- TensorFlow Model Converter: https://www.tensorflow.org/lite/convert
+
+## Nota para el ejercicio
+
+Para este ejercicio, los tests utilizarán un mock del modelo para evitar dependencias externas.
