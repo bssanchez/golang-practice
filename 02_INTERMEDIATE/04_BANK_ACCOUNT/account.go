@@ -5,14 +5,14 @@ import (
 	"time"
 )
 
-// Transaction representa una transacción en la cuenta
+// Transaction represents a transaction in the account
 type Transaction struct {
 	Amount      float64
 	Date        time.Time
 	Description string
 }
 
-// Account representa una cuenta bancaria
+// Account represents a bank account
 type Account struct {
 	ID           string
 	Owner        string
@@ -20,34 +20,34 @@ type Account struct {
 	transactions []Transaction
 }
 
-// NewAccount crea una nueva cuenta con un saldo inicial
+// NewAccount creates a new account with an initial balance
 func NewAccount(id, owner string, initialBalance float64) *Account {
-	// TODO: Implementar esta función
+	// TODO: Implement this function
 	return nil
 }
 
-// Deposit añade fondos a la cuenta
-// Devuelve error si el monto es negativo
+// Deposit adds funds to the account
+// Returns error if the amount is negative
 func (a *Account) Deposit(amount float64, description string) error {
-	// TODO: Implementar esta función
+	// TODO: Implement this function
 	return nil
 }
 
-// Withdraw retira fondos de la cuenta
-// Devuelve error si el monto es negativo o si no hay suficiente saldo
+// Withdraw removes funds from the account
+// Returns error if the amount is negative or if there is insufficient balance
 func (a *Account) Withdraw(amount float64, description string) error {
-	// TODO: Implementar esta función
+	// TODO: Implement this function
 	return nil
 }
 
-// Balance devuelve el saldo actual de la cuenta
+// Balance returns the current account balance
 func (a *Account) Balance() float64 {
-	// TODO: Implementar esta función
+	// TODO: Implement this function
 	return 0
 }
 
-// Statement devuelve el historial de transacciones
+// Statement returns the transaction history
 func (a *Account) Statement() []Transaction {
-	// TODO: Implementar esta función
+	// TODO: Implement this function
 	return nil
 }

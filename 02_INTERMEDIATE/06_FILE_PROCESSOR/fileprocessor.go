@@ -8,33 +8,33 @@ import (
 	"strings"
 )
 
-// ReadFile lee un archivo y devuelve sus líneas como un slice de strings
+// ReadFile reads a file and returns its lines as a slice of strings
 func ReadFile(filename string) ([]string, error) {
-	// TODO: Implementar esta función
+	// TODO: Implement this function
 	return nil, nil
 }
 
-// WriteFile escribe un slice de strings a un archivo, una línea por elemento
+// WriteFile writes a slice of strings to a file, one line per element
 func WriteFile(filename string, lines []string) error {
-	// TODO: Implementar esta función
+	// TODO: Implement this function
 	return nil
 }
 
-// CountWords cuenta el número de palabras en un archivo
+// CountWords counts the number of words in a file
 func CountWords(filename string) (int, error) {
-	// TODO: Implementar esta función
+	// TODO: Implement this function
 	return 0, nil
 }
 
-// FindPattern encuentra líneas en un archivo que coinciden con un patrón regex
+// FindPattern finds lines in a file that match a regex pattern
 func FindPattern(filename, pattern string) ([]string, error) {
-	// TODO: Implementar esta función
+	// TODO: Implement this function
 	return nil, nil
 }
 
-// ReplaceInFile reemplaza todas las ocurrencias de 'old' con 'new' en un archivo
-// Devuelve el número de reemplazos realizados
+// ReplaceInFile replaces all occurrences of 'old' with 'new' in a file
+// Returns the number of replacements made
 func ReplaceInFile(filename, old, new string) (int, error) {
-	// TODO: Implementar esta función
+	// TODO: Implement this function
 	return 0, nil
 }

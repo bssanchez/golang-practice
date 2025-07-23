@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-// Task representa una tarea en la lista de tareas
+// Task represents a task in the todo list
 type Task struct {
 	ID          int
 	Title       string
@@ -16,56 +16,56 @@ type Task struct {
 	CompletedAt time.Time
 }
 
-// TodoList representa una lista de tareas
+// TodoList represents a list of tasks
 type TodoList struct {
 	Tasks  []Task
 	nextID int
 }
 
-// NewTodoList crea una nueva lista de tareas
+// NewTodoList creates a new todo list
 func NewTodoList() *TodoList {
-	// TODO: Implementar esta función
+	// TODO: Implement this function
 	return nil
 }
 
-// AddTask añade una nueva tarea a la lista
-// Devuelve el ID de la tarea creada
+// AddTask adds a new task to the list
+// Returns the ID of the created task
 func (l *TodoList) AddTask(title, description string) int {
-	// TODO: Implementar esta función
+	// TODO: Implement this function
 	return 0
 }
 
-// DeleteTask elimina una tarea por su ID
-// Devuelve error si la tarea no existe
+// DeleteTask deletes a task by its ID
+// Returns error if the task doesn't exist
 func (l *TodoList) DeleteTask(id int) error {
-	// TODO: Implementar esta función
+	// TODO: Implement this function
 	return nil
 }
 
-// CompleteTask marca una tarea como completada
-// Devuelve error si la tarea no existe o ya está completada
+// CompleteTask marks a task as completed
+// Returns error if the task doesn't exist or is already completed
 func (l *TodoList) CompleteTask(id int) error {
-	// TODO: Implementar esta función
+	// TODO: Implement this function
 	return nil
 }
 
-// GetTask obtiene una tarea por su ID
-// Devuelve error si la tarea no existe
+// GetTask gets a task by its ID
+// Returns error if the task doesn't exist
 func (l *TodoList) GetTask(id int) (Task, error) {
-	// TODO: Implementar esta función
+	// TODO: Implement this function
 	return Task{}, nil
 }
 
-// ListTasks devuelve todas las tareas o solo las pendientes
-// Si onlyPending es true, solo devuelve las tareas no completadas
+// ListTasks returns all tasks or only pending ones
+// If onlyPending is true, only returns uncompleted tasks
 func (l *TodoList) ListTasks(onlyPending bool) []Task {
-	// TODO: Implementar esta función
+	// TODO: Implement this function
 	return nil
 }
 
-// SearchTasks busca tareas que contengan el query en el título o descripción
-// La búsqueda es case-insensitive
+// SearchTasks searches for tasks that contain the query in title or description
+// The search is case-insensitive
 func (l *TodoList) SearchTasks(query string) []Task {
-	// TODO: Implementar esta función
+	// TODO: Implement this function
 	return nil
 }

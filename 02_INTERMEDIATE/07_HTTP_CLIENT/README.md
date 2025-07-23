@@ -1,24 +1,24 @@
-# Ejercicio 7: Cliente HTTP
+# Exercise 7: HTTP Client
 
-## Descripción
-Implementa un cliente HTTP simple que pueda realizar peticiones y procesar respuestas.
+## Description
+Implement a simple HTTP client that can make requests and process responses.
 
-## Requisitos
-1. Implementa las siguientes funciones en el archivo `httpclient.go`:
-   - `Get(url string) ([]byte, error)` - Realiza una petición GET y devuelve el cuerpo de la respuesta
-   - `GetJSON(url string, v interface{}) error` - Realiza una petición GET y deserializa la respuesta JSON
-   - `Post(url string, contentType string, body []byte) ([]byte, error)` - Realiza una petición POST
-   - `DownloadFile(url, filepath string) error` - Descarga un archivo desde una URL
-   - `FetchWithTimeout(url string, timeout time.Duration) ([]byte, error)` - Realiza una petición GET con timeout
+## Requirements
+1. Implement the following functions in the `httpclient.go` file:
+   - `Get(url string) ([]byte, error)` - Makes a GET request and returns the response body
+   - `GetJSON(url string, v interface{}) error` - Makes a GET request and deserializes the JSON response
+   - `Post(url string, contentType string, body []byte) ([]byte, error)` - Makes a POST request
+   - `DownloadFile(url, filepath string) error` - Downloads a file from a URL
+   - `FetchWithTimeout(url string, timeout time.Duration) ([]byte, error)` - Makes a GET request with timeout
 
-2. Consideraciones:
-   - Maneja correctamente los errores HTTP (códigos de estado, timeouts, etc.)
-   - Para `GetJSON`, usa la librería estándar `encoding/json`
-   - Para `DownloadFile`, escribe el contenido en el archivo de forma eficiente
-   - Implementa un mecanismo para cancelar peticiones que tarden demasiado
+2. Considerations:
+   - Handle HTTP errors correctly (status codes, timeouts, etc.)
+   - For `GetJSON`, use the standard library `encoding/json`
+   - For `DownloadFile`, write the content to the file efficiently
+   - Implement a mechanism to cancel requests that take too long
 
-## Pruebas
-Ejecuta `go test` para verificar tu implementación.
+## Tests
+Run `go test` to verify your implementation.
 
-## Nota
-Las pruebas utilizan un servidor HTTP mock para evitar dependencias externas.
+## Note
+The tests use a mock HTTP server to avoid external dependencies.

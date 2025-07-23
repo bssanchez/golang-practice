@@ -1,23 +1,23 @@
-# Ejercicio 6: Procesador de Archivos
+# Exercise 6: File Processor
 
-## Descripción
-Implementa un procesador de archivos que pueda leer, escribir y analizar archivos de texto.
+## Description
+Implement a file processor that can read, write, and analyze text files.
 
-## Requisitos
-1. Implementa las siguientes funciones en el archivo `fileprocessor.go`:
-   - `ReadFile(filename string) ([]string, error)` - Lee un archivo y devuelve sus líneas
-   - `WriteFile(filename string, lines []string) error` - Escribe líneas a un archivo
-   - `CountWords(filename string) (int, error)` - Cuenta palabras en un archivo
-   - `FindPattern(filename, pattern string) ([]string, error)` - Encuentra líneas que coinciden con un patrón
-   - `ReplaceInFile(filename, old, new string) (int, error)` - Reemplaza texto y devuelve el número de reemplazos
+## Requirements
+1. Implement the following functions in the `fileprocessor.go` file:
+   - `ReadFile(filename string) ([]string, error)` - Reads a file and returns its lines
+   - `WriteFile(filename string, lines []string) error` - Writes lines to a file
+   - `CountWords(filename string) (int, error)` - Counts words in a file
+   - `FindPattern(filename, pattern string) ([]string, error)` - Finds lines that match a pattern
+   - `ReplaceInFile(filename, old, new string) (int, error)` - Replaces text and returns the number of replacements
 
-2. Consideraciones:
-   - Maneja correctamente los errores de archivo (no existe, permisos, etc.)
-   - Para `FindPattern`, usa expresiones regulares
-   - Para `CountWords`, considera que las palabras están separadas por espacios, tabs o saltos de línea
+2. Considerations:
+   - Handle file errors correctly (doesn't exist, permissions, etc.)
+   - For `FindPattern`, use regular expressions
+   - For `CountWords`, consider that words are separated by spaces, tabs, or line breaks
 
-## Pruebas
-Ejecuta `go test` para verificar tu implementación.
+## Tests
+Run `go test` to verify your implementation.
 
-## Nota
-Para las pruebas, se crearán archivos temporales en el directorio actual.
+## Note
+For tests, temporary files will be created in the current directory.

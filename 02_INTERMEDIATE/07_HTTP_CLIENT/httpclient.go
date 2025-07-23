@@ -8,32 +8,32 @@ import (
 	"time"
 )
 
-// Get realiza una petición HTTP GET y devuelve el cuerpo de la respuesta
+// Get makes an HTTP GET request and returns the response body
 func Get(url string) ([]byte, error) {
-	// TODO: Implementar esta función
+	// TODO: Implement this function
 	return nil, nil
 }
 
-// GetJSON realiza una petición HTTP GET y deserializa la respuesta JSON
+// GetJSON makes an HTTP GET request and deserializes the JSON response
 func GetJSON(url string, v interface{}) error {
-	// TODO: Implementar esta función
+	// TODO: Implement this function
 	return nil
 }
 
-// Post realiza una petición HTTP POST y devuelve el cuerpo de la respuesta
+// Post makes an HTTP POST request and returns the response body
 func Post(url string, contentType string, body []byte) ([]byte, error) {
-	// TODO: Implementar esta función
+	// TODO: Implement this function
 	return nil, nil
 }
 
-// DownloadFile descarga un archivo desde una URL y lo guarda en la ruta especificada
+// DownloadFile downloads a file from a URL and saves it to the specified path
 func DownloadFile(url, filepath string) error {
-	// TODO: Implementar esta función
+	// TODO: Implement this function
 	return nil
 }
 
-// FetchWithTimeout realiza una petición HTTP GET con un timeout especificado
+// FetchWithTimeout makes an HTTP GET request with a specified timeout
 func FetchWithTimeout(url string, timeout time.Duration) ([]byte, error) {
-	// TODO: Implementar esta función
+	// TODO: Implement this function
 	return nil, nil
 }

@@ -1,34 +1,34 @@
-# Ejercicio 5: Lista de Tareas
+# Exercise 5: Todo List
 
-## Descripción
-Implementa un sistema de gestión de tareas (TODO list) utilizando structs y métodos en Go.
+## Description
+Implement a task management system (TODO list) using structs and methods in Go.
 
-## Requisitos
-1. Crea un struct `Task` en el archivo `todolist.go` con los siguientes campos:
+## Requirements
+1. Create a `Task` struct in the `todolist.go` file with the following fields:
    - `ID` (int)
    - `Title` (string)
    - `Description` (string)
    - `Done` (bool)
    - `CreatedAt` (time.Time)
-   - `CompletedAt` (time.Time, puede ser nula)
+   - `CompletedAt` (time.Time, can be null)
 
-2. Crea un struct `TodoList` con los siguientes campos:
-   - `Tasks` (slice de Task)
-   - `nextID` (int, para generar IDs únicos)
+2. Create a `TodoList` struct with the following fields:
+   - `Tasks` (slice of Task)
+   - `nextID` (int, to generate unique IDs)
 
-3. Implementa los siguientes métodos para `TodoList`:
+3. Implement the following methods for `TodoList`:
    - `NewTodoList() *TodoList` - Constructor
-   - `AddTask(title, description string) int` - Añade una tarea y devuelve su ID
-   - `DeleteTask(id int) error` - Elimina una tarea por ID
-   - `CompleteTask(id int) error` - Marca una tarea como completada
-   - `GetTask(id int) (Task, error)` - Obtiene una tarea por ID
-   - `ListTasks(onlyPending bool) []Task` - Lista todas las tareas o solo las pendientes
-   - `SearchTasks(query string) []Task` - Busca tareas por título o descripción
+   - `AddTask(title, description string) int` - Adds a task and returns its ID
+   - `DeleteTask(id int) error` - Deletes a task by ID
+   - `CompleteTask(id int) error` - Marks a task as completed
+   - `GetTask(id int) (Task, error)` - Gets a task by ID
+   - `ListTasks(onlyPending bool) []Task` - Lists all tasks or only pending ones
+   - `SearchTasks(query string) []Task` - Searches tasks by title or description
 
-4. Consideraciones:
-   - Las tareas deben tener IDs únicos y autoincrementales
-   - Al completar una tarea, se debe registrar la fecha actual en `CompletedAt`
-   - Las búsquedas deben ser case-insensitive
+4. Considerations:
+   - Tasks must have unique and auto-incremental IDs
+   - When completing a task, the current date must be recorded in `CompletedAt`
+   - Searches must be case-insensitive
 
-## Pruebas
-Ejecuta `go test` para verificar tu implementación.
+## Tests
+Run `go test` to verify your implementation.
