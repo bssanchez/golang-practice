@@ -116,7 +116,7 @@ Este es un repositorio para practicar y aprender GO; la idea es que te apoyes de
 
 ```bash
 # Ejecutar tests de un ejercicio específico
-cd BASIC/01_CALCULATOR && go test
+cd 01_BASIC/01_CALCULATOR && go test
 
 # Ejecutar tests con verbose output
 go test -v
