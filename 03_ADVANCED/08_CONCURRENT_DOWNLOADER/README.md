@@ -1,26 +1,31 @@
-# Ejercicio 8: Descargador Concurrente
+# Exercise 8: Concurrent Downloader
 
-## Descripción
-Implementa un sistema de descarga concurrente que pueda descargar múltiples archivos simultáneamente con límites de concurrencia.
+## Description
 
-## Requisitos
-1. Implementa las siguientes estructuras y funciones en el archivo `downloader.go`:
-   - Struct `DownloadResult` con campos para URL, ruta local, error y tiempo de descarga
-   - Struct `Downloader` con campo para el número máximo de descargas concurrentes
-   - Método `NewDownloader(maxConcurrent int) *Downloader` - Constructor
-   - Método `Download(url, filepath string) error` - Descarga un solo archivo
-   - Método `DownloadMany(urls []string, directory string) []DownloadResult` - Descarga múltiples archivos
-   - Método `DownloadWithProgress(url, filepath string, progressChan chan<- int) error` - Descarga con notificación de progreso
+Implement a concurrent download system that can download multiple files simultaneously with concurrency limits.
 
-2. Consideraciones:
-   - Utiliza goroutines para descargas concurrentes
-   - Limita el número de descargas simultáneas según `maxConcurrent`
-   - Implementa un mecanismo para reportar el progreso de descarga
-   - Maneja correctamente los errores y timeouts
-   - Asegúrate de que los recursos se liberen adecuadamente
+## Requirements
 
-## Pruebas
-Ejecuta `go test` para verificar tu implementación.
+1. Implement the following structures and functions in the `downloader.go` file:
 
-## Nota
-Las pruebas utilizan un servidor HTTP mock para evitar dependencias externas.
+   - Struct `DownloadResult` with fields for URL, local path, error, and download time
+   - Struct `Downloader` with field for maximum number of concurrent downloads
+   - Method `NewDownloader(maxConcurrent int) *Downloader` - Constructor
+   - Method `Download(url, filepath string) error` - Downloads a single file
+   - Method `DownloadMany(urls []string, directory string) []DownloadResult` - Downloads multiple files
+   - Method `DownloadWithProgress(url, filepath string, progressChan chan<- int) error` - Downloads with progress notification
+
+2. Considerations:
+   - Use goroutines for concurrent downloads
+   - Limit the number of simultaneous downloads according to `maxConcurrent`
+   - Implement a mechanism to report download progress
+   - Handle errors and timeouts correctly
+   - Ensure resources are properly released
+
+## Tests
+
+Run `go test` to verify your implementation.
+
+## Note
+
+The tests use a mock HTTP server to avoid external dependencies.

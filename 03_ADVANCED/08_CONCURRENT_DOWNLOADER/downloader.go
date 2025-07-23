@@ -8,41 +8,41 @@ import (
 	"time"
 )
 
-// DownloadResult contiene el resultado de una operación de descarga
+// DownloadResult contains the result of a download operation
 type DownloadResult struct {
-	URL      string        // URL del archivo descargado
-	FilePath string        // Ruta donde se guardó el archivo
-	Error    error         // Error durante la descarga (nil si fue exitosa)
-	Duration time.Duration // Tiempo que tomó la descarga
+	URL      string        // URL of the downloaded file
+	FilePath string        // Path where the file was saved
+	Error    error         // Error during download (nil if successful)
+	Duration time.Duration // Time taken for the download
 }
 
-// Downloader gestiona descargas concurrentes de archivos
+// Downloader manages concurrent file downloads
 type Downloader struct {
-	maxConcurrent int // Número máximo de descargas concurrentes
+	maxConcurrent int // Maximum number of concurrent downloads
 }
 
-// NewDownloader crea un nuevo descargador con un límite de concurrencia
+// NewDownloader creates a new downloader with a concurrency limit
 func NewDownloader(maxConcurrent int) *Downloader {
-	// TODO: Implementar esta función
+	// TODO: Implement this function
 	return nil
 }
 
-// Download descarga un archivo desde una URL y lo guarda en la ruta especificada
+// Download downloads a file from a URL and saves it to the specified path
 func (d *Downloader) Download(url, filepath string) error {
-	// TODO: Implementar esta función
+	// TODO: Implement this function
 	return nil
 }
 
-// DownloadMany descarga múltiples archivos concurrentemente
-// Respeta el límite de concurrencia especificado en el Downloader
+// DownloadMany downloads multiple files concurrently
+// Respects the concurrency limit specified in the Downloader
 func (d *Downloader) DownloadMany(urls []string, directory string) []DownloadResult {
-	// TODO: Implementar esta función
+	// TODO: Implement this function
 	return nil
 }
 
-// DownloadWithProgress descarga un archivo y reporta el progreso a través de un canal
-// El progreso se reporta como un porcentaje (0-100)
+// DownloadWithProgress downloads a file and reports progress through a channel
+// Progress is reported as a percentage (0-100)
 func (d *Downloader) DownloadWithProgress(url, filepath string, progressChan chan<- int) error {
-	// TODO: Implementar esta función
+	// TODO: Implement this function
 	return nil
 }

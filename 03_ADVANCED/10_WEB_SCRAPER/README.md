@@ -1,28 +1,28 @@
-# Ejercicio 10: Web Scraper
+# Exercise 10: Web Scraper
 
-## Descripción
-Implementa un web scraper concurrente que pueda extraer información de páginas web y seguir enlaces.
+## Description
+Implement a concurrent web scraper that can extract information from web pages and follow links.
 
-## Requisitos
-1. Implementa las siguientes estructuras y funciones en el archivo `scraper.go`:
-   - Struct `ScrapedPage` con campos para URL, título, enlaces y texto extraído
-   - Struct `Scraper` con campos para profundidad máxima, número máximo de páginas y dominio permitido
-   - Método `NewScraper(maxDepth, maxPages int, allowedDomain string) *Scraper` - Constructor
-   - Método `Scrape(startURL string) ([]ScrapedPage, error)` - Inicia el scraping desde una URL
-   - Método `ExtractLinks(html string, baseURL string) ([]string, error)` - Extrae enlaces de HTML
-   - Método `ExtractTitle(html string) string` - Extrae el título de una página HTML
-   - Método `ExtractText(html string) string` - Extrae el texto principal de una página HTML
+## Requirements
+1. Implement the following structures and functions in the `scraper.go` file:
+   - Struct `ScrapedPage` with fields for URL, title, links, and extracted text
+   - Struct `Scraper` with fields for maximum depth, maximum number of pages, and allowed domain
+   - Method `NewScraper(maxDepth, maxPages int, allowedDomain string) *Scraper` - Constructor
+   - Method `Scrape(startURL string) ([]ScrapedPage, error)` - Starts scraping from a URL
+   - Method `ExtractLinks(html string, baseURL string) ([]string, error)` - Extracts links from HTML
+   - Method `ExtractTitle(html string) string` - Extracts the title from an HTML page
+   - Method `ExtractText(html string) string` - Extracts the main text from an HTML page
 
-2. Consideraciones:
-   - Utiliza goroutines para scraping concurrente
-   - Implementa un mecanismo para limitar la concurrencia
-   - Respeta robots.txt y añade delays entre peticiones
-   - Maneja correctamente URLs relativas y absolutas
-   - Implementa un mecanismo para evitar ciclos (no visitar la misma URL dos veces)
-   - Limita el scraping al dominio permitido
+2. Considerations:
+   - Use goroutines for concurrent scraping
+   - Implement a mechanism to limit concurrency
+   - Respect robots.txt and add delays between requests
+   - Handle relative and absolute URLs correctly
+   - Implement a mechanism to avoid cycles (don't visit the same URL twice)
+   - Limit scraping to the allowed domain
 
-## Pruebas
-Ejecuta `go test` para verificar tu implementación.
+## Tests
+Run `go test` to verify your implementation.
 
-## Nota
-Las pruebas utilizan un servidor HTTP mock para evitar dependencias externas.
+## Note
+The tests use a mock HTTP server to avoid external dependencies.
