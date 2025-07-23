@@ -10,20 +10,20 @@ This is a repository for practicing and learning GO; the idea is that you rely o
 
 ```
 ./
-├── BASIC/
+├── 01_BASIC/
 │   ├── 01_CALCULATOR/
 │   ├── 02_STRING_UTILS/
 │   └── 03_ARRAY_OPERATIONS/
-├── INTERMEDIATE/
+├── 02_INTERMEDIATE/
 │   ├── 04_BANK_ACCOUNT/
 │   ├── 05_TODO_LIST/
 │   ├── 06_FILE_PROCESSOR/
 │   └── 07_HTTP_CLIENT/
-├── ADVANCED/
+├── 03_ADVANCED/
 │   ├── 08_CONCURRENT_DOWNLOADER/
 │   ├── 09_CACHE_SYSTEM/
 │   └── 10_WEB_SCRAPER/
-└── IA/
+└── 04_AI/
     ├── 11_SENTIMENT_ANALYZER/
     ├── 12_IMAGE_CLASSIFIER/
     └── 13_CHATBOT_ENGINE/
@@ -42,75 +42,75 @@ This is a repository for practicing and learning GO; the idea is that you rely o
 ### BASIC
 
 #### 1. CALCULATOR - Basic calculator
-- **Archivo**: `BASIC/01_CALCULATOR/`
-- **Dificultad**: ⭐
-- **Conceptos**: Basic functions, math operations, error handling
+- **Files**: `01_BASIC/01_CALCULATOR/`
+- **Difficulty**: ⭐
+- **Concepts**: Basic functions, math operations, error handling
 
 #### 2. STRING_UTILS - Strings utilities
-- **Archivo**: `BASIC/02_STRING_UTILS/`
-- **Dificultad**: ⭐
-- **Conceptos**: Strings handling, slices, loops
+- **Files**: `01_BASIC/02_STRING_UTILS/`
+- **Difficulty**: ⭐
+- **Concepts**: Strings handling, slices, loops
 
 #### 3. ARRAY_OPERATIONS - Operations with Arrays
-- **Archivo**: `BASIC/03_ARRAY_OPERATIONS/`
-- **Dificultad**: ⭐⭐
-- **Conceptos**: Slices, arrays, basic algorithms
+- **Files**: `01_BASIC/03_ARRAY_OPERATIONS/`
+- **Difficulty**: ⭐⭐
+- **Concepts**: Slices, arrays, basic algorithms
 
 ### INTERMEDIO
 
 #### 4. BANK_ACCOUNT - Bank account system
-- **Archivo**: `INTERMEDIATE/04_BANK_ACCOUNT/`
-- **Dificultad**: ⭐⭐
-- **Conceptos**: Structs, methods, encapsulation
+- **Files**: `02_INTERMEDIATE/04_BANK_ACCOUNT/`
+- **Difficulty**: ⭐⭐
+- **Concepts**: Structs, methods, encapsulation
 
 #### 5. TODO_LIST - Tasks list
-- **Archivo**: `INTERMEDIATE/05_TODO_LIST/`
-- **Dificultad**: ⭐⭐
-- **Conceptos**: Structs, slices, CRUD operations
+- **Files**: `02_INTERMEDIATE/05_TODO_LIST/`
+- **Difficulty**: ⭐⭐
+- **Concepts**: Structs, slices, CRUD operations
 
 #### 6. FILE_PROCESSOR - File processor
-- **Archivo**: `INTERMEDIATE/06_FILE_PROCESSOR/`
-- **Dificultad**: ⭐⭐⭐
-- **Conceptos**: File I/O, error handling, string processing
+- **Files**: `02_INTERMEDIATE/06_FILE_PROCESSOR/`
+- **Difficulty**: ⭐⭐⭐
+- **Concepts**: File I/O, error handling, string processing
 
 #### 7. HTTP_CLIENT - HTTP Client
-- **Archivo**: `INTERMEDIATE/07_HTTP_CLIENT/`
-- **Dificultad**: ⭐⭐⭐
-- **Conceptos**: HTTP requests, JSON, error handling
+- **Files**: `02_INTERMEDIATE/07_HTTP_CLIENT/`
+- **Difficulty**: ⭐⭐⭐
+- **Concepts**: HTTP requests, JSON, error handling
 
 ### AVANZADO
 
 #### 8. CONCURRENT_DOWNLOADER - Concurrent downloader
-- **Archivo**: `ADVANCED/08_CONCURRENT_DOWNLOADER/`
-- **Dificultad**: ⭐⭐⭐⭐
-- **Conceptos**: Goroutines, channels, concurrency
+- **Files**: `03_ADVANCED/08_CONCURRENT_DOWNLOADER/`
+- **Difficulty**: ⭐⭐⭐⭐
+- **Concepts**: Goroutines, channels, concurrency
 
 #### 9. CACHE_SYSTEM - Cache system
-- **Archivo**: `ADVANCED/09_CACHE_SYSTEM/`
-- **Dificultad**: ⭐⭐⭐⭐
-- **Conceptos**: Maps, mutex, concurrency, TTL
+- **Files**: `03_ADVANCED/09_CACHE_SYSTEM/`
+- **Difficulty**: ⭐⭐⭐⭐
+- **Concepts**: Maps, mutex, concurrency, TTL
 
 #### 10. WEB_SCRAPER - Web Scraper
-- **Archivo**: `ADVANCED/10_WEB_SCRAPER/`
-- **Dificultad**: ⭐⭐⭐⭐⭐
-- **Conceptos**: HTTP, HTML parsing, goroutines, channels
+- **Files**: `03_ADVANCED/10_WEB_SCRAPER/`
+- **Difficulty**: ⭐⭐⭐⭐⭐
+- **Concepts**: HTTP, HTML parsing, goroutines, channels
 
 ### INTELIGENCIA ARTIFICIAL
 
 #### 11. SENTIMENT_ANALYZER - Feeling Analyzer
-- **Archivo**: `IA/11_SENTIMENT_ANALYZER/`
-- **Dificultad**: ⭐⭐
-- **Conceptos**: Text procesing, sentiment analisis, dictionaries
+- **Files**: `04_AI/11_SENTIMENT_ANALYZER/`
+- **Difficulty**: ⭐⭐
+- **Concepts**: Text procesing, sentiment analisis, dictionaries
 
 #### 12. IMAGE_CLASSIFIER - Image classifier
-- **Archivo**: `IA/12_IMAGE_CLASSIFIER/`
-- **Dificultad**: ⭐⭐⭐⭐
-- **Conceptos**: Computer vision, pre-trained models, GoCV
+- **Files**: `04_AI/12_IMAGE_CLASSIFIER/`
+- **Difficulty**: ⭐⭐⭐⭐
+- **Concepts**: Computer vision, pre-trained models, GoCV
 
 #### 13. CHATBOT_ENGINE - Chatbot engine
-- **Archivo**: `IA/13_CHATBOT_ENGINE/`
-- **Dificultad**: ⭐⭐⭐⭐⭐
-- **Conceptos**: Natural Lnguage Process, conversation context, External APIs
+- **Files**: `04_AI/13_CHATBOT_ENGINE/`
+- **Difficulty**: ⭐⭐⭐⭐⭐
+- **Concepts**: Natural Lnguage Process, conversation context, External APIs
 
 ## Comandos Útiles
 
